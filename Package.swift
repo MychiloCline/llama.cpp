@@ -14,6 +14,11 @@ let package = Package(
         .library(name: "llama", targets: ["llama"]),
     ],
     targets: [
-        .systemLibrary(name: "llama", pkgConfig: "llama"),
+        .systemLibrary(name: "llama", pkgConfig: "llama"), 
     ]
 )
+            // cxxSettings: [
+            //     // Tells the compiler where to find your C++ headers.
+            //     .headerSearchPath("include"),
+            //     // Use a particular C++ standard, for example:
+            //     .unsafeFlags(["-std=c++17"])
